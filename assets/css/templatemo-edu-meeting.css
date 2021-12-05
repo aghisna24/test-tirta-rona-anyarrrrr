@@ -813,7 +813,7 @@ section.services{
 }
 
 .services .item .icon img{
-  border-radius: 100%;
+  border-radius: 5%;
 }
 
 .services .item h4 {
