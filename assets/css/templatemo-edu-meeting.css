@@ -125,7 +125,7 @@ global styles
 */
 html,
 body {
-  background: rgb(31,38,44);
+  background-color: rgb(5,57,54);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -193,8 +193,10 @@ body {
   margin-bottom: 50px; 
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(250,250,250,0.15);
-  font-size: 22px;
+  font-size: 35px;
   font-weight: 700;
+
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
   text-transform: uppercase;
   color: #fff;
 }
@@ -731,7 +733,7 @@ banner
 .main-banner .caption h2 {
   margin-top: 20px;
   margin-bottom: 5px;
-  font-size: 36px;
+  font-size: 50px;
   text-transform: uppercase;
   font-weight: 800;
   color: #fff;
@@ -740,7 +742,7 @@ banner
 .main-banner .caption h3 {
   margin-top: 5px;
   margin-bottom: 20px;
-  font-size: 26px;
+  font-size: 45px;
   text-transform: uppercase;
   font-weight: 800;
   color: #fff;
@@ -787,7 +789,8 @@ services
 }
 
 section.services{
-  background-image: url(../images/meetings-bg.jpg);
+  background-image: url(../images/bg-nature.jpg);
+  filter: blur(100%);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -910,7 +913,9 @@ upcoming meetings
 */
 
 section.upcoming-meetings {
-  background-color: rgb(31,38,44);
+  background-image: url(../images/bg-nature2-2.jpg);
+  background-position: center center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
@@ -1337,6 +1342,65 @@ section.our-facts .video img {
   max-width: 56px;
 }
 
+/* EXPA */
+
+section.expa {
+  background-image: url(../images/bg-tree.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 110px;
+}
+
+section.expa .section-heading {
+  text-align: center;
+}
+
+section.expa .categories {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-right: 45px;
+}
+
+section.expa .categories h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f272b;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+section.expa .categories ul li {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+section.expa .categories ul li a {
+  font-size: 15px;
+  color: #1f272b;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+section.expa .categories ul li a:hover {
+  color: #a12c2f;
+}
+
+section.expa .categories .main-button-red {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+  margin-top: 15px;
+}
+
+section.expa .categories .main-button-red a {
+  width: 100%;
+  text-align: center;
+}
+
 
 /* 
 ---------------------------------------------
@@ -1345,7 +1409,7 @@ contact us
 */
 
 section.contact-us {
-  background-color: rgb(31,38,44);
+  background-image: url(../images/bg-tree.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1465,6 +1529,11 @@ section.contact-us .right-info ul li a:hover{
 }
 
 .footer {
+  background-color: rgb(5,57,54);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   margin-top: 140px;
   border-top: 1px solid rgba(250,250,250,0.15);
@@ -1488,18 +1557,18 @@ heading page
 */
 
 section.heading-page {
-  background-image: url(../images/Header-1.jpg);
+  background-color: rgb(5,57,54);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 230px;
+  padding-top: 180px;
+  padding-bottom: 100px;
   text-align: center;
 }
 
 section.heading-page h6 {
   margin-top: 0px;
-  font-size: 15px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
@@ -1524,7 +1593,7 @@ upcoming meetings page
 */
 
 section.meetings-page {
-  background-color: rgb(31,38,44);
+  background-image: url(../images/bg-nature2-2.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1601,9 +1670,12 @@ section.meetings-page .pagination ul li a:hover {
 
 .meeting-single-item .thumb {
   position: relative;
+  height: 5rem;
+  background-color: #a12c2f;
 }
 
 .meeting-single-item .thumb img {
+  height: 300px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -1656,7 +1728,7 @@ section.meetings-page .pagination ul li a:hover {
   margin-top: 7px;
 }
 
-.meeting-single-item .down-content h4 {
+.meeting-single-item .down-content .expa h4 {
   font-size: 22px;
   color: #1f272b;
   font-weight: 600;
@@ -1678,12 +1750,30 @@ section.meetings-page .pagination ul li a:hover {
 }
 
 .meeting-single-item .down-content p.description {
+  text-align: justify;
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid #eee;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #eee;
+}
+
+.meeting-single-item .down-content img{
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.meeting-single-item .down-content p.img {
+  text-align: justify;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.meeting-single-item .down-content .image-content2 {
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.image-content {
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .meeting-single-item .down-content .share {
@@ -1697,7 +1787,7 @@ section.meetings-page .pagination ul li a:hover {
   margin-right: 10px;
   margin-bottom: 0px;
 }
-
+    
 .meeting-single-item .down-content .share ul li {
   display: inline;
 }
@@ -1728,12 +1818,20 @@ section.meetings-page .pagination ul li a:hover {
 
 /* sensor area */
 section.sensor-area {
+  background-image: url(../images/bg-tree.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 140px;
   padding-bottom: 0px;
+}
+
+section.sensor-area .bg-sticky {
+  background-color: #fff;
+  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  padding: 40px;
 }
 
 section.sensor-area .bg-card {
@@ -1758,7 +1856,7 @@ section.sensor-area .title-suhu h2{
 
 section.sensor-area .bg-content {
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;  
   background-color: #fff;
   box-shadow: 0px 3px 50px rgba(73, 101, 103, 0.46), inset 6px 5px 50px 2px rgba(255, 255, 255, 0.87);
   border-radius: 35px;
@@ -1769,10 +1867,22 @@ section.sensor-area .bg-content h3{
   color :rgb(0, 0, 0);
   line-height: 1x;
   margin-top: 0px;
+  padding-bottom: 1.5rem;
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+}
+
+section.sensor-area .bg-content p {
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+section.sensor-area .bg-content p span{
+
+  font-size: 18px;
+  font-weight: 600;
 }
 
 section.sensor-area .bg-card-inside {
@@ -1800,6 +1910,18 @@ section.sensor-area .img-owner img{
   margin: auto;
   border-radius: 10%;
 }
+section.sensor-area .menu-trigger {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 33px;
+  width: 32px;
+  height: 40px;
+  text-indent: -9999em;
+  z-index: 99;
+  right: 40px;
+  display: none;
+}
 
 section.sensor-area .bg-card .info-owner{
   margin-top: 20px;
@@ -1815,6 +1937,18 @@ section.sensor-area .bg-card .desc-owner{
   padding-top: 1rem;
 }
 
+section.sensor-area .bg-content .img-k img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 10rem;
+  max-height: 100%;
+  align-items: center;
+}
+
+section.sensor-area .bg-content p{
+
+}
 section.sensor-area .bg-card .desc-owner p{
   font-size: 1.3rem;
   line-height: 35px;
