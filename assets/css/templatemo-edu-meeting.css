@@ -742,7 +742,7 @@ banner
 .main-banner .caption h3 {
   margin-top: 5px;
   margin-bottom: 20px;
-  font-size: 45px;
+  font-size: 65px;
   text-transform: uppercase;
   font-weight: 800;
   color: #fff;
@@ -757,8 +757,8 @@ banner
 
 .main-banner .caption p {
   color: #fff;
-  font-size: 19px;
-  max-width:750px;
+  font-size: 25px;
+  max-width:1000px;
   text-align:justify;
 }
 
@@ -1550,6 +1550,11 @@ section.contact-us .right-info ul li a:hover{
   color: #f5a425;
 }
 
+.footer .container .show-center {
+  display: inline-flex;
+  align-items: center;
+}
+
 
 /*
 ---------------------------------------------
@@ -1730,7 +1735,7 @@ section.meetings-page .pagination ul li a:hover {
 }
 
 .meeting-single-item .down-content .expa h4 {
-  font-size: 22px;
+  font-size: 25px;
   color: #1f272b;
   font-weight: 600;
   display: inline-block;
@@ -1747,17 +1752,17 @@ section.meetings-page .pagination ul li a:hover {
 
 .meeting-single-item .down-content p {
   color: #1f272b;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .meeting-single-item .down-content p.description {
   text-align: justify;
-  margin-top: 40px;
-  padding-top: 40px;
+  margin-top: 15px;
+  padding-top: 15x;
 }
 
 .meeting-single-item .down-content img{
-  padding-top: 0.3rem;
+  padding-top: 2.5rem;
   padding-bottom: 0.3rem;
 }
 
@@ -1770,6 +1775,11 @@ section.meetings-page .pagination ul li a:hover {
 .meeting-single-item .down-content .image-content2 {
   margin-top: 3rem;
   padding-top: 2rem;
+}
+
+.meeting-single-item .down-content .image-content3 {
+  margin-top: 1rem;
+  padding-top: 1.8rem;
 }
 
 .image-content {
@@ -1963,6 +1973,21 @@ section.sensor-area .bg-card .desc-owner p{
 	width: 31%;
 }
 
+.footer-logo{
+  display: inline-flex;
+}
+
+.footer-logo img{
+  width: 85px;
+  height: 85px;
+  margin-left: 2rem;
+  object-fit:contain;
+}
+
+.radius{
+  border-radius: 50%;
+}
+
 @media (max-width: 992px) {
 	.templatemo-item-col {
 		width: 45%;
@@ -2148,5 +2173,8 @@ responsive
   section.sensor-area .bg-card p{
     font-size: 1rem;
     line-height: 10px;
+  }
+  .footer-logo img{
+    width: 40px;
   }
 }
