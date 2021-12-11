@@ -1775,16 +1775,19 @@ section.meetings-page .pagination ul li a:hover {
 .meeting-single-item .down-content .image-content2 {
   margin-top: 3rem;
   padding-top: 2rem;
+  object-fit:contain;
 }
 
 .meeting-single-item .down-content .image-content3 {
   margin-top: 1rem;
   padding-top: 1.8rem;
+  object-fit:contain;
 }
 
 .image-content {
   margin-top: 1rem;
   padding-top: 1rem;
+  object-fit:contain;
 }
 
 .meeting-single-item .down-content .share {
