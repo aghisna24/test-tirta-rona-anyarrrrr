@@ -757,8 +757,9 @@ banner
 
 .main-banner .caption p {
   color: #fff;
-  font-size: 14px;
-  max-width: 570px;
+  font-size: 19px;
+  max-width:750px;
+  text-align:justify;
 }
 
 .main-banner .caption .main-button-red {
